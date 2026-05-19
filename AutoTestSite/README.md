@@ -144,7 +144,7 @@ AutoTestSite/
 
 - **LINE**：@dunkliao
 - **Email**：dicksskimo@yahoo.com.tw
-- **Facebook**：https://www.facebook.com/groups/1562757673989767
+- **Instagram**：https://www.instagram.com/killyssss/
 - **Google 表單**：需求評估表單（已嵌入）
 
 ## 📱 使用方式
