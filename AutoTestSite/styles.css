@@ -1314,6 +1314,88 @@ img {
     white-space: nowrap;
 }
 
+/* ============================================
+   USER MANUAL PAGE
+   ============================================ */
+
+.user-manual-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #006B7E 100%);
+    color: white;
+    padding: calc(var(--spacing-2xl) + 80px) var(--spacing-lg) var(--spacing-2xl);
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.user-manual-section {
+    padding: var(--spacing-2xl) 0;
+    min-height: calc(100vh - 400px);
+}
+
+.gitbook-container {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 200px);
+    min-height: 600px;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.gitbook-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.iframe-fallback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(0, 78, 91, 0.05) 0%, rgba(226, 188, 184, 0.05) 100%);
+    border-radius: var(--border-radius-md);
+}
+
+.iframe-fallback.hidden {
+    display: none;
+}
+
+.fallback-content {
+    text-align: center;
+    padding: var(--spacing-2xl);
+    max-width: 500px;
+}
+
+.fallback-content i {
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-lg);
+    opacity: 0.8;
+}
+
+.fallback-content h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.fallback-content p {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin-bottom: var(--spacing-lg);
+}
+
+.hidden {
+    display: none !important;
+}
+
 .project-link:hover {
     color: var(--accent-color);
     gap: 0.75rem;
