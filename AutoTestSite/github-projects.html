@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DunkLiao 的 GitHub 公開專案展示與介紹。">
+    <title>GitHub 專案展示 | AutoTool</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ============================================
+         HEADER / NAVIGATION
+         ============================================ -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="nav-logo">
+                    <i class="fas fa-cog"></i>
+                    <span>AutoTool</span>
+                </div>
+                
+                <!-- Navigation Links -->
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">首頁</a></li>
+                    <li class="nav-item"><a href="github-projects.html" class="nav-link active">GitHub 專案</a></li>
+                    <li class="nav-item"><a href="index.html#cta" class="nav-link">聯絡</a></li>
+                </ul>
+                
+                <!-- Hamburger Menu -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============================================
+         SECTION 1: PAGE HEADER
+         ============================================ -->
+    <section class="github-projects-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="page-title">
+                    <i class="fab fa-github"></i>
+                    GitHub 專案
+                </h1>
+                <p class="page-subtitle">
+                    探索我在 GitHub 上的開源專案與技術實踐
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 2: PROJECTS GRID
+         ============================================ -->
+    <section class="github-projects-section">
+        <div class="container">
+            <!-- Loading State -->
+            <div id="loadingState" class="loading-state">
+                <div class="loading-spinner">
+                    <i class="fas fa-spinner fa-spin"></i>
+                </div>
+                <p>正在加載 GitHub 專案...</p>
+            </div>
+
+            <!-- Error State -->
+            <div id="errorState" class="error-state hidden">
+                <div class="error-icon">
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <h3>無法加載專案</h3>
+                <p id="errorMessage">發生了未知錯誤，請稍後重試。</p>
+                <button class="btn btn-primary" onclick="location.reload()">
+                    <i class="fas fa-redo"></i> 重新加載
+                </button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div id="projectsGrid" class="projects-grid hidden">
+                <!-- Projects will be populated here by JavaScript -->
+            </div>
+
+            <!-- Empty State -->
+            <div id="emptyState" class="empty-state hidden">
+                <div class="empty-icon">
+                    <i class="fas fa-inbox"></i>
+                </div>
+                <h3>尚無公開專案</h3>
+                <p>目前還沒有找到任何公開專案。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>關於</h4>
+                    <p>AutoTool 提供企業自動化解決方案與開源專案展示。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>連結</h4>
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="https://github.com/DunkLiao" target="_blank">GitHub 主頁</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>聯絡方式</h4>
+                    <p>
+                        <a href="mailto:dicksskimo@yahoo.com.tw">Email</a> | 
+                        <a href="https://line.me/ti/p/~dunkliao" target="_blank">LINE</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoTool. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="github-projects.js"></script>
+</body>
+</html>
