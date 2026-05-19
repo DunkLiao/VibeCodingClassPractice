@@ -66,34 +66,7 @@
     <!-- ============================================
          SECTION 2: GITBOOK IFRAME
          ============================================ -->
-    <section class="user-manual-section">
-        <div class="gitbook-container">
-            <!-- GitBook iframe with fallback -->
-            <iframe 
-                id="gitbookFrame"
-                src="https://dunkliao.gitbook.io/my-user-manual"
-                class="gitbook-iframe"
-                title="產品使用手冊"
-                allow="fullscreen; picture-in-picture"
-                sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-presentation"
-                onload="handleIframeLoad()"
-                onerror="handleIframeError()">
-            </iframe>
-            
-            <!-- Fallback content - shown when iframe fails to load -->
-            <div id="iframeFallback" class="iframe-fallback hidden">
-                <div class="fallback-content">
-                    <i class="fas fa-book"></i>
-                    <h3>產品使用手冊</h3>
-                    <p>無法直接載入 GitBook 內容，請點擊下方按鈕在新頁面中查看</p>
-                    <a href="https://dunkliao.gitbook.io/my-user-manual" target="_blank" class="btn btn-primary">
-                        <i class="fas fa-external-link-alt"></i>
-                        在新頁面打開手冊
-                    </a>
-                </div>
-            </div>
-        </div>
-        
+    <section class="user-manual-section">                
         <!-- Quick link button -->
         <div class="container" style="margin-top: var(--spacing-2xl); text-align: center;">
             <a href="https://dunkliao.gitbook.io/my-user-manual" target="_blank" class="btn btn-secondary">
