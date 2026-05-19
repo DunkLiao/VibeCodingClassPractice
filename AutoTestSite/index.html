@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="提供快速、客製化、實用的自動化小工具服務，協助企業降低重複性工作成本，提升日常作業效率。">
+    <title>自動化小工具服務 | AutoTool - 企業流程自動化解決方案</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ============================================
+         HEADER / NAVIGATION
+         ============================================ -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="nav-logo">
+                    <i class="fas fa-cog"></i>
+                    <span>AutoTool</span>
+                </div>
+                
+                <!-- Navigation Links -->
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="#pain-points" class="nav-link">痛點</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">服務</a></li>
+                    <li class="nav-item"><a href="#technologies" class="nav-link">技術</a></li>
+                    <li class="nav-item"><a href="#process" class="nav-link">流程</a></li>
+                    <li class="nav-item"><a href="#scenarios" class="nav-link">場景</a></li>
+                    <li class="nav-item"><a href="#cta" class="nav-link">聯絡</a></li>
+                </ul>
+                
+                <!-- Hamburger Menu -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============================================
+         SECTION 1: HERO
+         ============================================ -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">讓繁瑣工作自動化，<br>把時間留給更重要的事情。</h1>
+            <p class="hero-subtitle">
+                提供各式企業自動化小工具與流程整合服務，<br>
+                協助公司快速減少重複性作業，提升效率與穩定性。<br>
+                <span class="tech-highlight">支援 VBA、AutoHotKey、UiPath、C#、AutoIt、IBM PCOMM 等多種技術方案。</span>
+            </p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('#cta')">立即洽詢</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('#cta')">免費需求評估</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('#cta')">我要客製化工具</button>
+            </div>
+            <div class="hero-features">
+                <div class="feature-tag">快速開發</div>
+                <div class="feature-tag">客製化流程</div>
+                <div class="feature-tag">降低人工操作</div>
+                <div class="feature-tag">隨插即用</div>
+                <div class="feature-tag">可持續維護</div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" alt="企業自動化流程" loading="lazy">
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 2: PAIN POINTS
+         ============================================ -->
+    <section id="pain-points" class="section pain-points">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">每天都在重複做一樣的事情？</h2>
+            </div>
+            
+            <div class="pain-points-grid">
+                <div class="pain-card">
+                    <div class="card-icon">
+                        <i class="fas fa-copy"></i>
+                    </div>
+                    <h3>重複複製貼上資料</h3>
+                    <p>每天從不同系統整理 Excel、貼資料、改格式。</p>
+                </div>
+                
+                <div class="pain-card">
+                    <div class="card-icon">
+                        <i class="fas fa-hourglass-end"></i>
+                    </div>
+                    <h3>人工操作耗時</h3>
+                    <p>大量例行性作業需要人工點擊與輸入。</p>
+                </div>
+                
+                <div class="pain-card">
+                    <div class="card-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>跨系統流程繁瑣</h3>
+                    <p>舊系統、主機系統、Excel、Web 平台彼此無法整合。</p>
+                </div>
+                
+                <div class="pain-card">
+                    <div class="card-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>容易發生人為錯誤</h3>
+                    <p>重複工作容易疲勞，導致資料錯誤或漏處理。</p>
+                </div>
+                
+                <div class="pain-card">
+                    <div class="card-icon">
+                        <i class="fas fa-users-slash"></i>
+                    </div>
+                    <h3>缺乏 IT 資源</h3>
+                    <p>小型需求排不到正式開發時程。</p>
+                </div>
+            </div>
+            
+            <div class="pain-footer">
+                <p>許多公司真正需要的，不是大型系統重建，<br>而是一個能立即改善工作效率的小工具。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 3: SERVICES
+         ============================================ -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">各式企業流程自動化服務</h2>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-table"></i>
+                    </div>
+                    <h3>Excel / VBA 自動化</h3>
+                    <ul>
+                        <li>Excel 報表處理</li>
+                        <li>批次整理資料</li>
+                        <li>巨集工具開發</li>
+                        <li>定期報表產出</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <h3>AutoHotKey / AutoIt</h3>
+                    <ul>
+                        <li>鍵盤滑鼠自動化</li>
+                        <li>Windows 操作自動化</li>
+                        <li>重複動作快速執行</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Web 自動化</h3>
+                    <ul>
+                        <li>iMacros 操作流程</li>
+                        <li>網頁資料整理</li>
+                        <li>批次登入與操作</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>UiPath RPA</h3>
+                    <ul>
+                        <li>跨系統流程串接</li>
+                        <li>流程機器人設計</li>
+                        <li>企業流程自動化</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>C# 客製化工具</h3>
+                    <ul>
+                        <li>小型桌面工具</li>
+                        <li>Windows Utility</li>
+                        <li>API 串接工具</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>IBM PCOMM 主機整合</h3>
+                    <ul>
+                        <li>主機操作自動化</li>
+                        <li>銀行/企業舊系統流程串接</li>
+                        <li>Terminal 操作流程優化</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>SQLite 小型資料庫</h3>
+                    <ul>
+                        <li>工具資料儲存</li>
+                        <li>本地資料管理</li>
+                        <li>輕量型資料整合</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <h3>DOS Batch 批次工具</h3>
+                    <ul>
+                        <li>批次執行流程</li>
+                        <li>排程工具</li>
+                        <li>檔案搬移與整理</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 4: TECHNOLOGIES
+         ============================================ -->
+    <section id="technologies" class="section technologies">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">支援多種企業常見技術環境</h2>
+                <p class="section-subtitle">不強迫企業更換既有系統，而是優先利用現有環境進行流程改善。</p>
+            </div>
+            
+            <div class="tech-badges">
+                <div class="tech-badge">AutoIt</div>
+                <div class="tech-badge">AutoHotKey</div>
+                <div class="tech-badge">VBA</div>
+                <div class="tech-badge">C#</div>
+                <div class="tech-badge">UiPath</div>
+                <div class="tech-badge">SQLite</div>
+                <div class="tech-badge">IBM PCOMM</div>
+                <div class="tech-badge">DOS Batch</div>
+                <div class="tech-badge">iMacros</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 5: PROCESS
+         ============================================ -->
+    <section id="process" class="section process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">簡單 4 步驟開始自動化</h2>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>需求討論</h3>
+                        <p>了解目前工作流程與痛點。</p>
+                    </div>
+                </div>
+                
+                <div class="process-connector"></div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>方案規劃</h3>
+                        <p>評估適合的自動化技術與工具。</p>
+                    </div>
+                </div>
+                
+                <div class="process-connector"></div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>快速開發</h3>
+                        <p>敏捷式開發與測試。</p>
+                    </div>
+                </div>
+                
+                <div class="process-connector"></div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>交付導入</h3>
+                        <p>提供工具、操作說明與後續調整。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="process-footer">
+                <p>以「先能用、再優化」為原則，協助企業快速看見改善成果。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 6: SCENARIOS
+         ============================================ -->
+    <section id="scenarios" class="section scenarios">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">適合這些工作場景</h2>
+            </div>
+            
+            <div class="scenarios-grid">
+                <div class="scenario-card">
+                    <div class="scenario-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>行政人員</h3>
+                    <p>每天整理大量 Excel 與資料。</p>
+                </div>
+                
+                <div class="scenario-card">
+                    <div class="scenario-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>財務與會計</h3>
+                    <p>定期報表與資料整理需求高。</p>
+                </div>
+                
+                <div class="scenario-card">
+                    <div class="scenario-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>銀行與企業內勤</h3>
+                    <p>跨系統作業繁瑣。</p>
+                </div>
+                
+                <div class="scenario-card">
+                    <div class="scenario-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>業務與客服</h3>
+                    <p>重複輸入與查詢流程耗時。</p>
+                </div>
+                
+                <div class="scenario-card">
+                    <div class="scenario-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>中小企業</h3>
+                    <p>沒有專屬 IT 團隊，但想提升效率。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 7: DIFFERENTIATION
+         ============================================ -->
+    <section id="differentiation" class="section differentiation">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">不是大型系統開發，<br>而是真正能落地的小工具。</h2>
+            </div>
+            
+            <div class="differentiation-grid">
+                <div class="diff-card">
+                    <div class="diff-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>敏捷開發</h3>
+                    <p>快速產出可使用版本。</p>
+                </div>
+                
+                <div class="diff-card">
+                    <div class="diff-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <h3>客製化</h3>
+                    <p>依照實際流程調整。</p>
+                </div>
+                
+                <div class="diff-card">
+                    <div class="diff-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>成本較低</h3>
+                    <p>不需要大型系統預算。</p>
+                </div>
+                
+                <div class="diff-card">
+                    <div class="diff-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>可逐步擴充</h3>
+                    <p>先解決最痛的問題。</p>
+                </div>
+                
+                <div class="diff-card">
+                    <div class="diff-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>熟悉企業舊系統</h3>
+                    <p>可搭配既有環境運作。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 8: FAQ
+         ============================================ -->
+    <section id="faq" class="section faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">常見問題</h2>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>沒有 IT 背景可以使用嗎？</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>可以，工具會依照實際使用者設計。我們會根據您的團隊背景和操作習慣，提供易於上手的介面和完整的使用說明。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>一定要更換現有系統嗎？</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>不需要，多數情況可直接搭配現有流程。我們的自動化工具可與您既有的系統（Excel、主機系統、Web 平台等）無縫整合。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>開發時間需要多久？</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>依需求而定，小型工具通常可快速完成。我們採用敏捷開發方式，讓您快速看見成果，而不需要等待漫長的開發週期。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>可以後續修改嗎？</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>可以，支援後續優化與功能擴充。工具上線後，我們繼續提供維護與改善支援，協助您應對業務變化。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>是否可以客製企業流程？</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>可以，這是主要服務內容之一。我們的工具完全根據您的實際工作流程進行設計，確保最大化的業務價值。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 9: FINAL CTA
+         ============================================ -->
+    <section id="cta" class="section final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">讓重複工作，開始自動完成。</h2>
+                <p class="cta-subtitle">
+                    從小工具開始，一步一步改善工作效率。<br>
+                    歡迎提供您的工作流程，一起討論最適合的自動化方案。
+                </p>
+                
+                <div class="cta-buttons-group">
+                    <button class="btn btn-primary" onclick="document.getElementById('contactForm').scrollIntoView({ behavior: 'smooth' })">立即下訂</button>
+                    <a href="https://line.me/ti/p/~dunkliao" target="_blank" class="btn btn-secondary" style="text-decoration: none;">聯絡討論需求</a>
+                    <a href="mailto:dicksskimo@yahoo.com.tw?subject=自動化工具諮詢" class="btn btn-secondary" style="text-decoration: none;">免費需求評估</a>
+                </div>
+                
+                <div class="contact-methods" id="contactForm">
+                    <h3>選擇聯絡方式</h3>
+                    <div class="contact-grid">
+                        <a href="https://line.me/ti/p/~dunkliao" target="_blank" class="contact-card">
+                            <i class="fab fa-line"></i>
+                            <span>LINE 聯絡</span>
+                            <small>@dunkliao</small>
+                        </a>
+                        
+                        <a href="mailto:dicksskimo@yahoo.com.tw?subject=自動化工具諮詢" class="contact-card">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email 聯絡</span>
+                            <small>dicksskimo@yahoo.com.tw</small>
+                        </a>
+                        
+                        <a href="https://www.facebook.com/groups/1562757673989767" target="_blank" class="contact-card">
+                            <i class="fab fa-facebook"></i>
+                            <span>Facebook 粉專</span>
+                            <small>加入討論社群</small>
+                        </a>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3>填寫需求評估表單</h3>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSffKEg_JBpnAbJhNrJENVOGrgV3krpA4Gn7EmJyIEfwMR1Tng/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3><i class="fas fa-cog"></i> AutoTool</h3>
+                    <p>企業自動化小工具服務專家</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>快速連結</h4>
+                    <ul>
+                        <li><a href="#hero">首頁</a></li>
+                        <li><a href="#services">服務</a></li>
+                        <li><a href="#process">流程</a></li>
+                        <li><a href="#cta">聯絡我們</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>聯絡資訊</h4>
+                    <p>
+                        <i class="fas fa-envelope"></i> dicksskimo@yahoo.com.tw<br>
+                        <i class="fab fa-line"></i> @dunkliao<br>
+                        <i class="fab fa-facebook"></i> <a href="https://www.facebook.com/groups/1562757673989767" target="_blank">Facebook 粉專</a>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoTool. 版權所有，保留一切權利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
